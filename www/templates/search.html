@@ -1,0 +1,29 @@
+<ion-view view-title="Pesquisa">
+    <ion-content>
+        <div class="jumbotron">
+            <table class="table table-striped">
+                <tr>
+                   <!-- <td>Id</td>!-->
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>                   
+                </tr>
+                <tr ng-repeat="cliente in clientes">
+                    <!--<td ng-repeat="(key,value) in cliente">
+                        {{value}}
+                    </td>!-->
+                    <td>{{cliente.nome}}</td>
+                    <td>{{cliente.telefone}}</td>
+                    <td>{{cliente.email}}</td>
+                    
+                </tr>
+            </table>
+        </div>
+
+        <button class="button button-block button-balanced" ng-click="novoCliente()">
+            Novo
+        </button>
+
+    </ion-content>
+
+</ion-view>
